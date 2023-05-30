@@ -32,12 +32,11 @@ function encrypt() {
 
 function decrypt() {
     let text = document.querySelector('.decode').value;
-
-    text = text.replace('ai', 'a');
-    text = text.replace('enter', 'e');
-    text = text.replace('imes', 'i')
-    text = text.replace('ober', 'o')
-    text = text.replace('ufat', 'u');
+    text = text.replaceAll('ai', 'a');
+    text = text.replaceAll('enter', 'e');
+    text = text.replaceAll('imes', 'i')
+    text = text.replaceAll('ober', 'o')
+    text = text.replaceAll('ufat', 'u');
     return text;
 }
 
